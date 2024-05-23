@@ -3,27 +3,29 @@
         <title>My Personal Website</title>
        <link rel="stylesheet" href="styles.css">
     </head>
-    <body class="index">
+    <body class="index" data-barba="wrapper">
         <header>
            <h1>Bennett's Personal Website</h1> 
            <h2>Welcome!</h2>
            <p>I like sports, gaming with my friends, baking and cooking and my favorite food is sushi.</p>
            <nav>
-          <a href="index.html">Home page</a> 
-           <a href="about.html">About</a>  
-           <a href="goofystories.html">Goofy Stories</a> 
-           <a href="docs.html">Docs</a> 
-
-        </nav>
+            <a href="index.html">Home page</a> 
+            <a href="about.html">About</a>  
+            <a href="goofystories.html">Stories</a> 
+            <a href="docs.html">Writing Pieces</a> 
+           </nav> 
+            <div class="video-wrapper">
+                <div class='embed-container'><iframe src='https://www.youtube.com/embed/26RIzBl0gPQ' frameborder='0' allowfullscreen></iframe></div>
+            </div>
         </header>
+           <main data-barba="container" data-barba-namespace="home">
        <article>
 <h3>How to Embed a Video</h3>
-<div class='embed-container'><iframe src='https://www.youtube.com/embed/dWXuz95uBQo' frameborder='0' allowfullscreen></iframe></div>
 
        </article>
        
        
-        <main>
+        
            <section>
 
           
@@ -40,5 +42,7 @@
          </article>  
             </section> 
         </main>
+        <script src="https://unpkg.com/@barba/core"></script>
+        <script src="script.js"></script>
     </body>
 </html>
